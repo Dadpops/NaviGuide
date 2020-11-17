@@ -6,6 +6,7 @@
   <title>Animated Navigation</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
 </head>
 <body>
   <!-- Menu Overlay -->
@@ -14,7 +15,7 @@
     <nav>
       <ul>
         <li id="nav-1"><a href="#home">Home</a></li>
-        <li id="nav-2"><a href="#about">About</a></li>
+        <li id="nav-2"><a href="#about">Resume</a></li>
         <li id="nav-3"><a href="#skills">Skills</a></li>
         <li id="nav-4"><a href="#projects">Projects</a></li>
         <li id="nav-5"><a href="#contact">Contact</a></li>
@@ -28,11 +29,64 @@
     <div class="bar3"></div>
   </div>
   <!-- Sections -->
-  <section id="home"><a href="https://www.dadpops.com" target="_blank">Dadpops Development</a></section>
-  <section id="about"><h1>Learn More About Me</h1></section>
-  <section id="skills"><h1>These Are My Strengths</h1></section>
-  <section id="projects"><h1>These Are My Results</h1></section>
-  <section id="contact"><h1>Available Anytime</h1></section>
+  <section id="home">
+    <h1>Dadpops Development</h1>
+  </section>
+  <section id="about">
+    <div>
+        <img id="resume" src="img\Resume.png" alt="resume">
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close"><i class="fas fa-window-close"></i></span>
+  
+      <!-- Modal Content (The Image) -->
+      <img src="img\Resume.png" class="modal-content" id="img01">
+  
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+  </section>
+  <section id="skills">
+    <h1>Skills / Languages</h1>
+    <ul>
+      <li>HTML</li>
+      <li>CSS + SASS</li>
+      <li>jQuery</li>
+      <li>Javascript(through ES10)</li>
+      <li>Responsive Design</li>
+      <li>Bootstrap/CSS Grid/Flexbox</li>
+      <li>React + Redux</li>
+      <li>Git + Github</li>
+      <li>MongoDB</li>
+      <li>Express.js</li>
+      <li>Node.js + NPM</li>
+      <li>PostgresSQL</li>
+      <li>Production + Deployment</li>
+      <li>User Authentication</li>
+    </ul>
+  </section>
+  <section id="projects">
+    <ul id="project_list">
+      <li><a href="https://dadpops.github.io/countdown/" target="_blank"><i class="fas fa-clock"></i>Countdown-Live Demo</a></li>
+      <li><a href="https://github.com/Dadpops/countdown" target="_blank"><i class="far fa-clock"></i>Countdown-SourceCode</a></li>
+      <li><a href="https://dadpops.github.io/musicPlayer/" target="_blank"><i class="fas fa-play-circle"></i>Music Player-LiveDemo</a></li>
+      <li><a href="https://github.com/Dadpops/musicPlayer" target="_blank"><i class="far fa-play-circle"></i>Music Player-Source Code</a></li>
+      <li><a href="https://dadpops.github.io/jokeTeller/" target="_blank"><i class="fas fa-smile-wink"></i>Joke Teller-LiveDemo</a></li>
+      <li><a href="https://github.com/Dadpops/jokeTeller" target="_blank"><i class="far fa-smile-wink"></i>Joke Teller-SourceCode</a></li>
+    </ul>
+  </section>
+  <section id="contact">
+    <div class="social-icons">
+      <a href="https://github.com/Dadpops" target="_blank"><i class="fab fa-github-square"></i></a>
+      <a href="https://www.linkedin.com/in/chris-cabena-65b5a11b4/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/Daddpops" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://www.facebook.com/christophercabena/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://dadpops.com/" target="_blank"><i class="fab fa-wordpress"></i></a>
+    </div>
+  </section>
   <!-- Script -->
   <script src="script.js"></script>
 </body>

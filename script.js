@@ -5,6 +5,10 @@ const nav2 = document.getElementById('nav-2');
 const nav3 = document.getElementById('nav-3');
 const nav4 = document.getElementById('nav-4');
 const nav5 = document.getElementById('nav-5');
+const img = document.getElementById("resume");
+const modalImg = document.getElementById("img01");
+const captionText = document.getElementById("caption");
+const modal = document.getElementById("myModal");
 
 function toggleNav() {
     // Toggle: Menu Bars open/closed
@@ -42,6 +46,21 @@ function toggleNav() {
         nav5.classList.remove('slide-in-5');
         nav5.classList.add('slide-out-5');
     }
+}
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
 }
 
 // Event Listeners
